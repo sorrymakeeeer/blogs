@@ -129,7 +129,7 @@
             
         
         <div class=".article-gallery"><h3 id="基于HEXO框架个人博客搭建"><a href="#基于HEXO框架个人博客搭建" class="headerlink" title="基于HEXO框架个人博客搭建"></a>基于HEXO框架个人博客搭建</h3><h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><p>介绍基于HEXO静态博客框架搭建个人博客</p>
-<p>工具：Windows10 laptop</p>
+<p>工具：Windows11 laptop</p>
 <h4 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h4><ol>
 <li>安装<code>nodeJS</code>（并配置npm repository地址，配置淘宝仓库地址即可。cnpm可以不装）</li>
 <li>安装并配置<code>git</code>（参考<a target="_blank" rel="noopener" href="https://www.baidu.com/">百度</a>）</li>
@@ -153,22 +153,27 @@
 <li>执行<code>hexo server/hexo s</code>启动服务</li>
 <li>浏览器访问<code>localhost:4000</code>即可</li>
 </ol>
-<h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><p>参考网络上的文章，基于<a target="_blank" rel="noopener" href="https://gitee.com/">码云</a>)/<a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>部署</p>
+<h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><p><del>基于<a target="_blank" rel="noopener" href="https://gitee.com/">码云</a>部署</del></p>
+<p>基于<a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>部署</p>
 <ol>
-<li><p>注册登录<a target="_blank" rel="noopener" href="https://gitee.com/">码云</a>账号</p>
+<li><p>注册登录账号</p>
 </li>
-<li><p>创建远程仓库</p>
+<li><p>创建远程仓库，仓库名为<code>xxx.github.io</code>，该仓库名最后即为访问地址</p>
 </li>
 <li><p><code>npm i </code>安装hexo  git部署插件 <code>hexo-deployer-git</code></p>
 </li>
 <li><p>在创建的博客文件夹下，打开<code>_.config.yml</code>配置文件</p>
-<figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy<span class="punctuation">:</span></span><br><span class="line">  type<span class="punctuation">:</span> git</span><br><span class="line">  repo<span class="punctuation">:</span> <span class="string">"xxxxx"</span> <span class="comment">//创建的仓库地址</span></span><br><span class="line">  branch<span class="punctuation">:</span> master <span class="comment">//代码分支，可以不写</span></span><br></pre></td></tr></tbody></table></figure></li>
+<figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy<span class="punctuation">:</span></span><br><span class="line">  type<span class="punctuation">:</span> git</span><br><span class="line">  repo<span class="punctuation">:</span> <span class="string">"xxxxx"</span> <span class="comment">//创建的仓库地址</span></span><br><span class="line">  branch<span class="punctuation">:</span> master <span class="comment">//代码分支，可以不写</span></span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>仓库<code>settings-&gt;pages-&gt;visit site</code> 检查部署的分支并预览</p>
+</li>
 <li><p><code>hexo clean hexo g hexo deploy</code> 重新生成并且部署</p>
 </li>
-<li><p>远程仓库 service 开启</p>
+<li><p>访问<code>https://xxx.gitbub.io</code></p>
 </li>
 </ol>
-<h4 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h4><h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">hexo文档</a></p>
+<h4 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h4><p>主题：<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">hexo-theme-a4</a></p>
+<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">hexo文档</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/nightmare_dimple/article/details/86661502">hexo NexT主题美化</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_40780805/article/details/99559526">hexo 码云部署</a></p>
 </div><script src="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
