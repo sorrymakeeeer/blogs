@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <meta name="description" content="Mac开发环境安装指北" />
+    <meta name="hexo-theme-A4" content="v1.8.9" />
+    <link rel="alternate icon" type="image/webp" href="/img/favicon.jpg">
+    <title>Scofield</title>
+
+    
+        
+<link rel="stylesheet" href="/css/highlight/style1.css">
+
+        
+<link rel="stylesheet" href="/css/reset.css">
+
+        
+<link rel="stylesheet" href="/css/markdown.css">
+
+        
+<link rel="stylesheet" href="/css/fonts.css">
+ 
+         <!--注意：首页既不是post也不是page-->
+        
+        
+        
+<link rel="stylesheet" href="/css/ui.css">
+ 
+        
+<link rel="stylesheet" href="/css/style.css">
+
+
+        
+            <!--返回顶部css-->
+            
+<link rel="stylesheet" href="/css/returnToTop.css">
+
+            
+<link rel="stylesheet" href="/css/unicons.css">
+
+        
+        
+            <!--目录-->
+            
+<link rel="stylesheet" href="/css/toc.css">
+
+        
+    
+
+    
+        
+<link rel="stylesheet" href="/css/returnToLastPage.css">
+
+    
+    
+   
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+
+
+<meta name="generator" content="Hexo 7.2.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+    
+    
+    <body>
+        
+            <div class="left-toc-container">
+                <nav id="toc" class="bs-docs-sidebar"></nav>
+            </div>
+        
+        <div class="paper">
+            
+            
+            
+            
+                <div class="shadow-drop-2-bottom paper-main">
+                    
+
+
+<div class="header">
+    <div class="header-container">
+        <img style="
+        width: 56px;
+        height: auto;" alt="^-^" cache-control="max-age=86400" class="header-img" src="/img/favicon.jpg" width="10%"></img>
+        <div class="header-content">
+            <a class="logo" href="/">Scofield</a> 
+            <span class="description">互联网搬砖人 | 瞎折腾爱好者</span> 
+        </div>
+        
+    </div>
+    
+   
+    <ul class="nav">
+        
+            
+                <li><a href="/">首页</a></li>
+            
+        
+            
+                <li><a href="/list/">文章</a></li>
+            
+        
+    </ul>
+</div> 
+        
+                    
+                    
+
+                    
+                    
+                    
+                    <!--说明是文章post页面-->
+                    
+                        <div class="post-main">
+
+    
+        <div class="post-main-title">
+            Mac开发环境安装指北
+        </div>
+      
+    
+
+    <div class="post-md">
+        
+            
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Mac%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%8C%87%E5%8C%97"><span class="post-toc-text">Mac开发环境安装指北</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E4%B8%80-%E5%AE%89%E8%A3%85NVM%E5%92%8CNodejs"><span class="post-toc-text">一. 安装NVM和Nodejs</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E4%BA%8C-%E5%AE%89%E8%A3%85Git"><span class="post-toc-text">二. 安装Git</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E4%B8%89-%E5%AE%89%E8%A3%85Brew%EF%BC%88mac%E7%9A%84%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%EF%BC%89"><span class="post-toc-text">三. 安装Brew（mac的包管理工具）</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%9B%9B-%E5%AE%89%E8%A3%85MySQL"><span class="post-toc-text">四. 安装MySQL</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E4%BA%94-%E5%AE%89%E8%A3%85MongoDB"><span class="post-toc-text">五. 安装MongoDB</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%85%AD-%E5%AE%89%E8%A3%85Maven"><span class="post-toc-text">六. 安装Maven</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E4%B8%83-%E5%AE%89%E8%A3%85JDK"><span class="post-toc-text">七. 安装JDK</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%85%AB-%E5%AE%89%E8%A3%85IDEA"><span class="post-toc-text">八. 安装IDEA</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E4%B9%9D-%E5%AE%89%E8%A3%85Navicat"><span class="post-toc-text">九. 安装Navicat</span></a></li></ol></li></ol>
+            
+        
+        <div class=".article-gallery"><h3 id="Mac开发环境安装指北"><a href="#Mac开发环境安装指北" class="headerlink" title="Mac开发环境安装指北"></a>Mac开发环境安装指北</h3><h4 id="一-安装NVM和Nodejs"><a href="#一-安装NVM和Nodejs" class="headerlink" title="一. 安装NVM和Nodejs"></a>一. 安装NVM和Nodejs</h4><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">nvm current</span><br><span class="line">nvm ls-remote</span><br><span class="line">nvm install v14.15.0</span><br><span class="line">nvm use v12.18.0</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h4 id="二-安装Git"><a href="#二-安装Git" class="headerlink" title="二. 安装Git"></a>二. 安装Git</h4><p>参考文章： <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/c058fbd7bb90">https://www.jianshu.com/p/c058fbd7bb90</a></p>
+<h4 id="三-安装Brew（mac的包管理工具）"><a href="#三-安装Brew（mac的包管理工具）" class="headerlink" title="三. 安装Brew（mac的包管理工具）"></a>三. 安装Brew（mac的包管理工具）</h4><ol>
+<li>安装</li>
+</ol>
+  <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">安装命令：/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<ol start="2">
+<li>卸载</li>
+</ol>
+  <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/HomebrewUninstall.sh)"</span><br></pre></td></tr></tbody></table></figure>
+
+<p>参考文章：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111014448">https://zhuanlan.zhihu.com/p/111014448</a></p>
+<h4 id="四-安装MySQL"><a href="#四-安装MySQL" class="headerlink" title="四. 安装MySQL"></a>四. 安装MySQL</h4><ol>
+<li>官方网站下载DWG文件-&gt;安装完成（注意复制初始密码）</li>
+<li>配置环境变量</li>
+</ol>
+<ul>
+<li>在bash_profile文件中添加</li>
+</ul>
+  <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export PATH=$PATH/usr/local/mysql/bin</span><br><span class="line">export PATH=$PATH/usr/local/mysql/bin/support-files</span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li>zsh 需要在根目录.zshrc文件中添加下列命令，让配置文件生效</li>
+</ul>
+  <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.bash_profile</span><br></pre></td></tr></tbody></table></figure>
+
+<ol start="3">
+<li>配置配置文件</li>
+</ol>
+  <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">配置文件路径：/usr/local/etc/mysql/my.conf</span><br></pre></td></tr></tbody></table></figure>
+
+  <figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">client</span>]</span><br><span class="line"><span class="string">default-character-set=utf8</span></span><br><span class="line"><span class="string">port=3306</span></span><br><span class="line">[<span class="string">mysqld</span>]</span><br><span class="line"><span class="string">character-set-server=utf8</span></span><br><span class="line"><span class="string">default-storage-engine=INNODB</span></span><br><span class="line"><span class="string">port=3306</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>参考文章：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/nickchen121/p/11145123.html">https://www.cnblogs.com/nickchen121/p/11145123.html</a></p>
+<h4 id="五-安装MongoDB"><a href="#五-安装MongoDB" class="headerlink" title="五. 安装MongoDB"></a>五. 安装MongoDB</h4><p><strong><span style="color:pink">使用brew安装（未使用）</span></strong></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. brew tap mongodb/brew</span><br><span class="line">2. brew tap | grep mongodb</span><br><span class="line">3. brew install mongodb-community@4.4</span><br><span class="line">参考：https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/#osx-prereq</span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>官网二进制文件安装</strong></p>
+<ol>
+<li>官网下载安装包</li>
+<li>解压至/usr/local/mongo</li>
+<li>mongo文件夹下创建data和log文件夹</li>
+<li>创建mongod.conf配置文件，配置如下</li>
+</ol>
+  <figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">port=27017</span>                                    <span class="comment"># 监听端口号</span></span><br><span class="line"><span class="string">dbpath=/usr/local/mongo/data/</span>                <span class="comment"># 数据存放位置</span></span><br><span class="line"><span class="string">logpath=/usr/local/mongo/log/mongodb.log</span>      <span class="comment"># 日志文件存放位置</span></span><br><span class="line"><span class="string">fork=true</span>                                     <span class="comment"># 是否后台运行</span></span><br></pre></td></tr></tbody></table></figure>
+
+<ol start="5">
+<li>配置环境变量（参照mysql）</li>
+</ol>
+  <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mongo启动命令： mongod -f /usr/local/mongo/mongod.conf</span><br><span class="line">mongo退出命令：use admin</span><br><span class="line">	   db.shutdownServer()</span><br></pre></td></tr></tbody></table></figure>
+
+<ol start="6">
+<li><p>配置mongodb服务开机自启动<br>参考文章： <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/3bedd7f044dc">https://www.jianshu.com/p/3bedd7f044dc</a><br>  <a target="_blank" rel="noopener" href="https://blog.csdn.net/tacity/article/details/104446461">https://blog.csdn.net/tacity/article/details/104446461</a></p>
+</li>
+<li><p>注意：无法使用mongorestore命令，mongo/bin目录下无相关命令脚本</p>
+</li>
+</ol>
+<p>  官网安装mongo后需额外下载mongodump、mongorestore等工具集，下载并解压至mongo/bin安装目录</p>
+<p>  下载地址: <a target="_blank" rel="noopener" href="https://www.mongodb.com/try/download/database-tools">https://www.mongodb.com/try/download/database-tools</a></p>
+<p>  参考文章：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43710881/article/details/107873636">https://blog.csdn.net/qq_43710881/article/details/107873636</a></p>
+<h4 id="六-安装Maven"><a href="#六-安装Maven" class="headerlink" title="六. 安装Maven"></a>六. 安装Maven</h4><ol>
+<li><p>使用brew安装</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew search maven  查询maven版本</span><br><span class="line">brew install maven版本 安装指定版本maven</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>配置环境变量<br>参照mysql</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">环境变量：export PATH=${PATH}/usr/local/opt/maven@3.5/bin</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>配置maven配置文件</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">配置文件路径：/usr/local/Cellar/maven@3.5/3.5.4_1/libexec/conf/settings.xml </span><br></pre></td></tr></tbody></table></figure>
+
+<p>参考文章： <a target="_blank" rel="noopener" href="https://blog.csdn.net/qxk5055/article/details/109068984">https://blog.csdn.net/qxk5055/article/details/109068984</a></p>
+</li>
+</ol>
+<h4 id="七-安装JDK"><a href="#七-安装JDK" class="headerlink" title="七. 安装JDK"></a>七. 安装JDK</h4><ol>
+<li><p>官网下载DMG文件安装</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">oracle账户：</span><br><span class="line">账号:645031854@qq.com</span><br><span class="line">密码:Li134055</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>配置环境变量参考上述</p>
+</li>
+</ol>
+<h4 id="八-安装IDEA"><a href="#八-安装IDEA" class="headerlink" title="八. 安装IDEA"></a>八. 安装IDEA</h4><p>参考文章： <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/acde443a457e">https://www.jianshu.com/p/acde443a457e</a></p>
+<h4 id="九-安装Navicat"><a href="#九-安装Navicat" class="headerlink" title="九. 安装Navicat"></a>九. 安装Navicat</h4><p>参考文章： <a target="_blank" rel="noopener" href="https://www.nrgh.net/archives/navicat-premium-15-mac.html">https://www.nrgh.net/archives/navicat-premium-15-mac.html</a></p>
+</div><script src="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>
+    </div>
+
+    <div class="post-meta">
+        <i>
+        
+            <span>2022-08-18</span>
+            
+            
+             
+        
+        </i>
+    </div>
+    <br>
+    
+    <!-- <div class="post-footer-pre-next">
+        <span>上一篇：<a href=""></a></span>
+        <span class="post-footer-pre-next-last-span-right">上一篇：<a href=""></a></span>
+    </div> -->
+
+    
+        
+
+     
+</div>
+
+
+
+                                      
+                    
+                    
+                    <div class="footer">
+    
+        <span> 
+            © 1949-2024 China 
+
+            
+                
+
+            
+        </span>
+    
+</div>
+<!--这是指一条线往下的内容-->
+<div class="footer-last">
+    
+            <span>Live in the moment</span>
+            
+    
+</div>
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!--目录-->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js" type="text/javascript" ></script>
+        
+<script src="/js/toc.js"></script>
+
+    
+
+    
+<script src="/js/randomHeaderContent.js"></script>
+
+    <!--回到顶部按钮-->
+    
+        
+<script src="/js/returnToTop.js"></script>
+
+    
+
+    
+        
+<script src="/js/returnToLastPage.js"></script>
+
+    
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+
+
+
+                </div>
+            
+            
+                <!-- 回到顶部的按钮-->  
+                <div class="progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+            
+                <!-- 返回的按钮-->  
+                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+    </body>
+
+
+</html>
